@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <!-- tr karakter sorununu çözen kod i harfi düzgün gözüküyor artık.-->
+	<title>Kod Adı 2023</title>
+	<link rel="stylesheet" type="text/css" href="stil.css"> <!--link kısmında artık css boyutuna girdik. yeni sekemye atadığımız stil.css kodu burdaki link vasıtasıyla senkronize oluyor.-->
+</head>
+<body>
+	Aslıhan Altuntaş
+	<br>  <!--alt satıra geçme kodu-->
+	<b>Aslıhan Altuntaş</b> <!--karakteri kalınlaştırma kodu-->
+	<br>
+	<i>Aslıhan Altuntaş</i> <!--eğik italik yazı modu-->
+	<br>
+	<b><i>Aslıhan Altuntaş</i></b> <!--hem kalın hem italık kodu-->
+	<br>
+	<u>Aslıhan Altuntaş</u> <!--altını çizme kodu-->
+	<br>
+	<s>Aslıhan Altuntaş</s> 25<!--üzeri çizeli karakter kodu-->
+	<br>
+	<h1>Aslıhan Altuntaş</h1> <!-- en büyük başlık kodu en büyük punto-->
+	<h6>Aslıhan Altuntaş</h6> <!-- en küçük başlık kodu en küçük punto-->
+	&emsp; <!-- paragaf boşluğu kodu-->Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim &nbsp;&nbsp;&nbsp; <!--boşluk bırakma kodu.bir tane koyarsam bir  boşluk iki tane iki vsvs--> ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. <p class="7ortala">&emsp;Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> <!--paragraf değiştirme kodu-->
+	<abbr title="Türk Dil Kurumu">TDK</abbr>  <!-- tdk kısaltmasının ne olduğunu açılımını anlamak için kısaltmanın üzerine imleci getirip bekleyince uzun hali beliriyor. title kısmı uzun halini yazdıgımız yer.>< içindeki kısımda kısaltma hali-->
+	<br>
+	4<sub>2</sub>
+	<br>
+	5<sup>3</sup>
+	<br>
+	<img width="20%" src="balık.jpg"> <!--resim ekleme ve boyut belirleme(%) (sadece rakam girersek piksel olarak alır) kodu.birde height var o da yüksekliği ayarlar -->
+	<hr> <!-- sayfaya çizgiçeker böler-->
+	<a target="_blank" href="http://www.kodadi2023.gsb.gov.tr">Resmi siteye gitmek için tıklayınız</a> <!--başka bir siteye yönlendirme linki--><!-- target blank hedefi yeni sekmede açma ayrıntısı-->
+	<br>
+	<a target="_blank" href="http://www.kodadi2023.gsb.gov.tr"><img width="20%" src="balık.jpg"></a> <!--resmi siteye gitmek için tıklayınız örneği linkli idi, buda resimli version-->
+	<br>
+	<a target="_blank" href="balık.jpg"><img width="20%" src="balık.jpg"></a> <!--resmin orijinal boyutuna götüren ayrı bir link kodu atadık-->
+	<br>
+	<span style="font-family: Arial; font-size:14px; color:orange;"> <b>Eğitimlerimize Hoşgeldiniz!</b></span> <!-- eğitimlerimize hoşgeldiniz yazısının şeklini şüklünü belirliyoruz bu kodlarla. eğer bir paragraf içindeki yazıların stilini belirlemek istiyorsak direkt style yazınca bu düzenlemeleri yapabiliriz. ama ayrıca bir satırda yazan tek bir cümle vs ise span kodu içinde bu düzenlemeleri yapmak zorundayız. eğer tanımlı bir renk değilse istediğimiz google a color picker yazıp # renk kodlarına ulaşırım ve kodu yazarken mutlaka # eklemeliyim -->
+	<br>
+	<ul> 
+		<li>Gençlik</li>
+		<li>Spor</li>
+		<li>Bakanlığı</li>
+	</ul> <!-- ul" maddeleme,işaretler şekliller verir; ol" sayılar,rakamlar şeklinde maddeler. ol yada ul olarak seçtikten sonra boşluk bırakıp type="a" type="circle" olarak girersek madeeler artık abc yada şekiller filan diye gider-->
+	<br>
+	<ol type="a">
+		<li>Gençlik</li>
+		<li>Spor</li>
+		<li>Bakanlığı</li>
+		</ol>
+	<br>
+	<ul type="square">
+		<li>Gençlik</li>
+		<li>Spor</li>
+		<li>Bakanlığı</li>
+	</ul>
+	<br>
+	<!-- burası tablo kodları başlangıcı. tabelnin içine border girersek çerçeve girer-->
+	<table border="5" width="500">
+		<tr>
+			<th>Sıra No:</th>
+			<th>Stok Adı:</th>
+			<th>Stok Adedi:</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>ananas</td>
+			<td>130 kasa</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>karpuz</td>
+			<td>50 kasa</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>elma</td>
+			<td>60 kasa</td>
+		</tr>
+	</table>
+	<!-- tr satrları th sütunları gösterir. text-align: center; yazıyı ortalar.burası tablo kodları bitişi-->
+	<hr>
+	<!-- form kodları başlangıcı-->
+
+	<form method="post" action="islem.php">
+		<label for="ad">Adınız Soyadınız</label>
+		<br>
+		<input type="text" id="ad" name="adsoyad" placeholder="Adınızı Giriniz" required="bu alanı doldurun"> 
+		<br><br>
+		<label><i>Şifreniz</i></label>
+		<br>
+		<input type="password" name="sifre" placeholder="Şifrenizi Giriniz">
+		<br><br>
+		<label><b>E-Postanız</b></label>
+		<br>
+		<input type="email" name="e-posta" placeholder="E-Postanızı Giriniz">
+		<br><br>
+		<label>Doğum Tarihiniz</label>
+		<br>
+		<input type="date" name="dtarihi">
+		<br><br>
+		<label>Kişisel Bilgileriniz</label>
+		<br>
+		<textarea name="bio" placeholder="hakkınızda"></textarea>
+		<br><br>
+		<input type="submit" name="uyeformunugonder" value="Kaydı Gönder">
+	</form>
+
+	<!-- form kodları bitişi. for ve id kombinasyonunun yaptığı şey; adınız soyadınız kısmına tıklayınca yazılacak olan kısma atıyor imleci direkt.placeholder kutunun içine yazılacak olan şeyi işliyor. method post kısmı cevapları linkte gözükmesin diye.şifre kısmında type password olmalı ki şifre gözükmesin-->
+	<hr>
+	<div style="border: dotted 4px pink; float: left;">
+		<div class="blok1">1. Blok</div>
+		<div class="blok2">2. Blok</div>
+		<div style="clear: left;"></div>
+	</div> <!-- border çizgiveriyor. dotted solid dashed çeşitleri. float left ortalıyorr. padding ve margin blokta boşluk veriyor ve birbirinden uzaklaştırmak için kullanılıyor.-->
+
+
+
+
+
+</body>
+</html>

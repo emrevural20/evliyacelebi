@@ -1,0 +1,19 @@
+.blok1{
+	border: solid 2px orange; 
+	width: 200px; 
+	float: left; 
+	padding: 10px;
+}
+.blok2{
+	border: dashed 3px green; 
+	width: 300px; 
+	float: left; 
+	margin: 10px;
+}
+td {
+	text-align: center !important; /*important kısmı bir diğer stil sekmesindeki aynı durumlar arasında önem yarımı yapmayı sağlar*/
+}
+
+.ortala{
+	text-align: center;
+}
